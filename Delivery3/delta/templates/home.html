@@ -1,5 +1,6 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
@@ -18,9 +19,12 @@
 <div class="container">
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-<link rel="stylesheet" href="css/fontawesome.min.css">
-<link rel="stylesheet" href="css/milligram.min.css">
-<link rel="stylesheet" href="css/style.css">
+<!--<link rel="stylesheet" href="Delivery3/delta/static/css/fontawesome.min.css">
+<link rel="stylesheet" href="Delivery3/delta/static/css/milligram.min.css">
+<link rel="stylesheet" href="Delivery3/delta/static/css/style.css">-->
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/fontawesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/milligram.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/style.css' %}">
 
 
 
@@ -47,14 +51,15 @@
 <div>
 
 
-<img src="templates/serttings.png" style="margin-left: 850px; width:02%; margin-top:-425px" alt="Girl in a jacket">
+<!--<img src="templates/serttings.png" style="margin-left: 850px; width:02%; margin-top:-425px" alt="Girl in a jacket">-->
+<img src="{% static 'staticfiles/delta/serttings.png' %}" style="margin-left: 850px; width:02%; margin-top:-425px" alt="Girl in a jacket">
 
 <button type="button" style="width:20%;margin-left:850px"class="block">Sign out</button>
 <button type="button" style="width:20%;margin-left:850px"class="block">Switch User</button>
 <button type="button" style="width:20%;margin-left:850px"class="block">Additional Settings</button>
 </div>
 <div>
-<img src="templates/eagles.jpg" style= "margin-top:100px; width:25%; margin-left:850px;" alt="Settings">
+<img src="{% static 'staticfiles/delta/eagles.jpg' %}" style= "margin-top:100px; width:25%; margin-left:850px;" alt="Settingz">
 </div>
 <!-- <script src="js/d3.min.js"></script> -->
 
@@ -64,7 +69,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@5.1.3"></script>
 
 <!-- Your implementation -->
-<script type="module" src="js/main.js"></script>
+<!-- <script type="module" src="delta/staticfiles/js/main.js"></script> -->
 
 </body>
 
